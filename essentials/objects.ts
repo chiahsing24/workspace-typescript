@@ -22,3 +22,9 @@ val = undefined;
 val = "123";
 val = 123;
 val = {};
+
+let dataObj: Record<string, number | string>;
+dataObj = {
+  entry1: 1,
+  entry2: "some string",
+};
