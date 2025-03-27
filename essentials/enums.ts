@@ -2,6 +2,7 @@ enum Role {
   Admin, // 0
   Editor, // 1
   Guest, // 2
+  Reader,
 }
 
 let userRole: Role = Role.Admin;
@@ -15,3 +16,11 @@ enum RoleNew {
 
 let userNew: RoleNew = "Guest";
 userNew = RoleNew.Guest;
+
+let userRoleStr: "admin" | "editor" | "guest" = "editor";
+userRoleStr = "guest";
+userRoleStr = "random";
+
+let possibleResults = [1 | -1, 1 | -1];
+possibleResults = [Role.Admin, RoleNew.Admin];
+possibleResults = [1, -1];
