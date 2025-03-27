@@ -24,3 +24,13 @@ userRoleStr = "random";
 let possibleResults = [1 | -1, 1 | -1];
 possibleResults = [Role.Admin, RoleNew.Admin];
 possibleResults = [1, -1];
+
+type CompanyRole = "admin" | "editor" | "guest" | "reader";
+
+let employee: CompanyRole = "editor";
+type Employee = {
+  name: string;
+  age: number;
+  role: CompanyRole;
+  permission: string[];
+};
